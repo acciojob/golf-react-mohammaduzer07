@@ -36,7 +36,7 @@ class App extends Component {
     }
 
     handleArrowRight=(event) =>{
-        if(event.key === "ArrowRight"){
+        if(event.key === "ArrowRight" || event.keyCode === 39){
             this.setState((prevState) =>({
                 posi: prevState.posi + 5,
                 ballPosition: { left: `${prevState.posi + 5}px` }           
